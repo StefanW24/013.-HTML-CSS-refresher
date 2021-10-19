@@ -1,0 +1,109 @@
+html{ 
+    height:100%;
+    width:100%;
+}
+body{ 
+    min-height:100%;
+    display: grid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-template-columns: 1fr 420px 10px 420px 1fr;
+    grid-template-rows: 1fr 250px 1fr;
+    grid-template-areas:  
+        "a b c d e"  
+        "f g h i j"
+        "k l m n o"
+}
+.banner1{
+    grid-area: g;
+    border-style: solid;
+    border-color:#D3D3D3;
+    border-radius: 10px;
+}
+.picture1, .picture2{
+    grid-area: g;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 25px;
+}
+.picture2{
+    grid-area: i;
+}
+h1{ 
+    font-size: 25px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+p{
+    padding-left: 15px;
+    margin-top: unset;
+    font-size: 23px;
+    color: #909090;
+}
+p:nth-child(3){
+    color: #585858;
+    font-size: 22px;
+}
+span{
+    font-weight: 600;
+}
+hr{
+    margin-top: 25px;
+    border-style: none;
+    height: 1px;
+    background-color: #F0F0F0;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+}
+.btn-group .button {
+    background-color: white;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: #32CD32;
+    color: #32CD32;
+    padding: 10px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-group .button1 {
+    background-color: white;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-color:crimson;
+    color: crimson;
+    padding: 5px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+  
+.btn-group .button:hover {
+    background-color:#98FB98;
+}
+.btn-group .button1:hover {
+    background-color: #f6a2b3;
+}
+.banner2{
+    grid-area: i;
+    border-style: solid;
+    border-color:#D3D3D3;
+    border-radius: 10px;
+}
